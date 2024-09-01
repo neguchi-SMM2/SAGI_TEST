@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォームサンプル</title>
+</head>
+<body style="background-color: purple;">
+    <h2 style="color: red;">登録フォーム</h2>
+    この度は<b style="color: red;">オウム真理教</b>の会員にご登録していただき、ありがとうございます。<br>下のフォームに<b>姓、名、生年月日、住所、メールアドレス</b>を入力して送信してください。
+    
+    <form id="registrationForm">
+        <label for="lastName">姓:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="firstName">名:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="birthdate">生年月日:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="address">住所:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="email">メールアドレス:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="button" onclick="redirect()">送信</button>
+    </form>
+
+    <script>
+        function redirect() {
+            alert('このサイトはneguchiによって作成されました。詐欺サイトに騙されないでください。');
+        }
+    </script>
+</body>
+</html>
